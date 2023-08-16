@@ -129,4 +129,21 @@ public class StudentAndSubjectDaoImplementation implements StudentAndSubjectDao 
 
 	}
 
+	@Override
+	public List<Subject> getSubjectListById(int id) {
+		
+		Student std = null;
+		
+		Session session = sessionfactory.openSession();
+		Transaction txn = session.beginTransaction();
+		
+		std=session.get(Student.class, id);
+		txn.commit();
+		session.close();
+		
+		return std.getSubject();
+		
+		
+	}
+
 }

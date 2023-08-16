@@ -66,6 +66,14 @@ public class StudentAndSubjectController {
 		
 	}
 	
+	@GetMapping("/students/{id}/subjects")
+	public List<Subject> getSubjectListById( @PathVariable int id){
+		
+		return studentAndSubjectService.getSubjectListById(id);
+		
+		
+	} 
+	
 	
 	
 	

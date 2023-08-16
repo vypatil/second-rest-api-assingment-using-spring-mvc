@@ -18,5 +18,6 @@ public interface StudentAndSubjectService {
 
 	public Subject getsub(int id);
 
+	public List<Subject> getSubjectListById(int id);
 
 }

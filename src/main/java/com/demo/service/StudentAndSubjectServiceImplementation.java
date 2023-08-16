@@ -10,24 +10,22 @@ import com.demo.entity.Student;
 import com.demo.entity.Subject;
 
 @Service
-public class StudentAndSubjectServiceImplementation implements StudentAndSubjectService{
+public class StudentAndSubjectServiceImplementation implements StudentAndSubjectService {
 
 	@Autowired
 	StudentAndSubjectDao studentAndsubjectDao;
-	
+
 	@Override
 	public boolean saveStudent(Student std) {
 		return studentAndsubjectDao.saveStudent(std);
 
-		
 	}
 
 	@Override
 	public List<Student> getStudents() {
-		
-	return	studentAndsubjectDao.getStudents();
-		
-		
+
+		return studentAndsubjectDao.getStudents();
+
 	}
 
 	@Override
@@ -45,5 +43,9 @@ public class StudentAndSubjectServiceImplementation implements StudentAndSubject
 		return studentAndsubjectDao.getsub(id);
 	}
 
-	
+	@Override
+	public List<Subject> getSubjectListById(int id) {
+		return studentAndsubjectDao.getSubjectListById(id);
+	}
+
 }
