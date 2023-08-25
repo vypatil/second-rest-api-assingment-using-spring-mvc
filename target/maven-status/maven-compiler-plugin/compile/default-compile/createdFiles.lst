@@ -2,6 +2,7 @@ com\demo\config\SpringBeansConfig.class
 com\demo\controller\StudentAndSubjectController.class
 com\demo\service\StudentAndSubjectServiceImplementation.class
 com\demo\entity\Subject.class
+com\demo\util\StudentNameComparator.class
 com\demo\dao\StudentAndSubjectDaoImplementation.class
 com\demo\config\FrontControllerConfig.class
 com\demo\entity\Student.class

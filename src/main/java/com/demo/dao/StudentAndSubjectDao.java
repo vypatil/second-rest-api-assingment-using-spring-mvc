@@ -18,4 +18,6 @@ public interface StudentAndSubjectDao {
 	public Subject getsub(int id);
 	
 	public List<Subject> getSubjectListById(int id);
+
+	public List<Student> getStudents(Integer firstResult, Integer maxResult);
 }

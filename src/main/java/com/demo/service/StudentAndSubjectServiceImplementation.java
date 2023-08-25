@@ -48,4 +48,10 @@ public class StudentAndSubjectServiceImplementation implements StudentAndSubject
 		return studentAndsubjectDao.getSubjectListById(id);
 	}
 
+	@Override
+	public List<Student> getStudents(Integer firstResult, Integer maxResult) {
+		
+		return studentAndsubjectDao.getStudents(firstResult , maxResult);
+	}
+
 }
